@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+  margin: 0;
+  padding: 0;
   }
+body{
+  font-family:cursive ;
+  
+}
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+    background-image:url("/public/thrones.jpg") ;    
+}
+.hero .hero-banner{
+  text-align: center;
+  text-transform: capitalize;
+  background-color: black;
+  color: #fff;
+  padding: 10px; 
+  box-shadow: 5px 5px 5px 10px black;
+    
+}
+.hero  .hero-banner h1{
+  text-shadow: 2px 2px 5px red ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero .hero-banner p{
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+.hero .hero-banner button{
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 200;
+  background-color: snow;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px gray;  
+}
+.hero .hero-banner button:hover{
+  transform: translateY(5px);
+  background-color: rgb(148, 118, 118);
+  box-shadow: 2px 2px 13px 8px gainsboro;
+}
+.navbar{
+  height: 7vh;
+  display: flex;
+  background-color:#F7F4E1;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+.navbar ul{
+  display: inline-flex;  
+  margin-right: 10px;
+}
+.navbar ul li{
+  margin-left: 32px;
+  text-decoration: none;
+  list-style: none;
+  background-color: black;
+  padding: 5px;
+  background-color:#F6F3DF ;
+  color: black;
+  box-shadow: 1px 1px 5px 5px black;
+  cursor: pointer;
+}
+.projectCard{
+  height: fit-content;
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
+  width: 300px;
+ 
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 1px 1px 5px 1px black;
+  background-color: rgb(240, 237, 231);
+}
+.projectCard img{
+  width: 250px;
+  height: 300px;
+}
+.projectCard .info
+{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+.char-card{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+ 
+}
+.main .trend{
+ text-align: center;
+
+}
+.main{
+  background-color: #f6f3df;
+}
+.searchedItem{
+  background-color: #F6F3DF;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.container{
+  display: flex;
+  padding: 10px;
+  height: fit-content;
+  width: fit-content;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 2px solid black;
+  box-shadow: 2px 1px 10px 4px black;
 }
-
-.App-link {
-  color: #61dafb;
+.container-content{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-content img{
+  width: 250px;
+  height: 300px;
 }
